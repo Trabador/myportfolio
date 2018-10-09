@@ -1,2 +1,72 @@
+* {
+  box-sizing: border-box; }
+
 body {
-  background: #444; }
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; }
+  body#bg-image {
+    background: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-size: cover; }
+  body:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(57, 57, 57, 0.6); }
+  body header {
+    position: fixed;
+    width: 100%;
+    z-index: 2; }
+    body header div.menu-btn {
+      position: fixed;
+      top: 35px;
+      right: 35px;
+      z-index: 3;
+      cursor: pointer; }
+      body header div.menu-btn:hover {
+        color: #FF5A09;
+        transition: all 0.5s ease-out; }
+    body header nav.menu {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      opacity: 0.8;
+      visibility: hidden; }
+      body header nav.menu.show {
+        visibility: visible; }
+  body main {
+    padding: 4rem;
+    height: 100%; }
+    body main.home {
+      overflow: hidden; }
+    body main h1.large-header {
+      margin: 0;
+      font-weight: 400;
+      margin-top: 20vh;
+      font-size: 4rem; }
+      body main h1.large-header span.secondary-color {
+        color: #FF5A09; }
+    body main h2.small-header {
+      margin: 0;
+      font-weight: 400;
+      font-size: 2rem;
+      padding: 0.2rem 1rem;
+      background: rgba(65, 65, 65, 0.5); }
+    body main .icons {
+      margin-top: 1rem; }
+      body main .icons a {
+        padding: 0.4rem; }
+        body main .icons a:hover {
+          color: #FF5A09;
+          transition: all 0.5s ease-out; }
+
+a {
+  color: #fff;
+  text-decoration: none; }

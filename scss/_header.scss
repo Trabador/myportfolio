@@ -1,0 +1,29 @@
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    div.menu-btn{
+        position: fixed;
+        top: 35px;
+        right: 35px;
+        z-index: 3;
+        cursor: pointer;
+
+        &:hover{
+            color: $secondary-color;
+            @include easeOut();
+        }
+    }
+
+    nav.menu{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        opacity: 0.8;
+        visibility: hidden;
+
+        &.show{
+            visibility: visible;
+        }
+    }
+}

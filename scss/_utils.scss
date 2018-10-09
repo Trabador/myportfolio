@@ -1,0 +1,38 @@
+$primary-color: #393939;
+$secondary-color: #FF5A09;
+$white-text: #fff;
+$portrait-url: url(../img/portrait.jpg);//relative to css folder
+$background-url: url(../img/background.jpg);//relative to css folder
+$show-background-image: true;
+$opacity: 0.6;
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+@mixin easeOut {
+    transition: all 0.5s ease-out;
+}
+
+@mixin backgroundImage {
+    @if $show-background-image{
+        &#bg-image{
+            background: $background-url;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        &:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: rgba($primary-color, $opacity);
+        }
+    }
+}
