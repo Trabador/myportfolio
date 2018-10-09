@@ -1,0 +1,14 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "Portfolio web page for demo purposes.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "author": "Alexis Garcia",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
