@@ -20,53 +20,150 @@ body {
     height: 100%;
     z-index: -1;
     background: rgba(57, 57, 57, 0.6); }
-  body header {
-    position: fixed;
-    width: 100%;
-    z-index: 2; }
-    body header div.menu-btn {
-      position: fixed;
-      top: 35px;
-      right: 35px;
-      z-index: 3;
-      cursor: pointer; }
-      body header div.menu-btn:hover {
-        color: #FF5A09;
-        transition: all 0.5s ease-out; }
-    body header nav.menu {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      opacity: 0.8;
-      visibility: hidden; }
-      body header nav.menu.show {
-        visibility: visible; }
-  body main {
-    padding: 4rem;
-    height: 100%; }
-    body main.home {
-      overflow: hidden; }
-    body main h1.large-header {
-      margin: 0;
-      font-weight: 400;
-      margin-top: 20vh;
-      font-size: 4rem; }
-      body main h1.large-header span.secondary-color {
-        color: #FF5A09; }
-    body main h2.small-header {
-      margin: 0;
-      font-weight: 400;
-      font-size: 2rem;
-      padding: 0.2rem 1rem;
-      background: rgba(65, 65, 65, 0.5); }
-    body main .icons {
-      margin-top: 1rem; }
-      body main .icons a {
-        padding: 0.4rem; }
-        body main .icons a:hover {
-          color: #FF5A09;
-          transition: all 0.5s ease-out; }
 
 a {
   color: #fff;
   text-decoration: none; }
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 2; }
+  header div.menu-btn {
+    position: fixed;
+    top: 35px;
+    right: 35px;
+    z-index: 3;
+    cursor: pointer; }
+    header div.menu-btn:hover {
+      color: #FF5A09;
+      transition: all 0.5s ease-out; }
+    header div.menu-btn .material-icons {
+      font-size: 48px; }
+  header nav.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    visibility: hidden; }
+    header nav.menu.show {
+      visibility: visible; }
+    header nav.menu .menu-branding,
+    header nav.menu .menu-nav {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      float: left;
+      width: 50%;
+      height: 100vh;
+      overflow: hidden; }
+    header nav.menu .menu-nav {
+      margin: 0;
+      padding: 0;
+      background: rgba(44, 44, 44, 0.8);
+      list-style: none;
+      transform: translate(0, -100%);
+      transition: all 0.5s ease-out; }
+      header nav.menu .menu-nav.show {
+        transform: translate(0, 0); }
+      header nav.menu .menu-nav .nav-item {
+        transform: translate(600px, 0);
+        transition: all 0.5s ease-out; }
+        header nav.menu .menu-nav .nav-item.show {
+          transform: translate(0, 0); }
+        header nav.menu .menu-nav .nav-item.current-page > a {
+          color: #FF5A09; }
+        header nav.menu .menu-nav .nav-item .nav-link {
+          display: inline-block;
+          position: relative;
+          font-size: 30px;
+          text-transform: uppercase;
+          padding: 1rem 0;
+          font-weight: 300;
+          color: #fff;
+          text-decoration: none; }
+          header nav.menu .menu-nav .nav-item .nav-link:hover {
+            color: #FF5A09;
+            transition: all 0.5s ease-out; }
+      header nav.menu .menu-nav .nav-item:nth-child(1) {
+        transition-delay: 0.1s; }
+      header nav.menu .menu-nav .nav-item:nth-child(2) {
+        transition-delay: 0.2s; }
+      header nav.menu .menu-nav .nav-item:nth-child(3) {
+        transition-delay: 0.3s; }
+      header nav.menu .menu-nav .nav-item:nth-child(4) {
+        transition-delay: 0.4s; }
+    header nav.menu .menu-branding {
+      margin: 0;
+      padding: 0;
+      background: rgba(57, 57, 57, 0.8);
+      transform: translate(0, 100%);
+      transition: all 0.5s ease-out; }
+      header nav.menu .menu-branding.show {
+        transform: translate(0, 0); }
+      header nav.menu .menu-branding .portrait {
+        width: 250px;
+        height: 250px;
+        background: url(../img/portrait.jpg);
+        border-radius: 50%;
+        border: solid 3px #FF5A09; }
+
+main {
+  padding: 4rem;
+  height: 100%; }
+  main.home {
+    overflow: hidden; }
+  main h1.large-header {
+    margin: 0;
+    font-weight: 400;
+    margin-top: 20vh;
+    font-size: 4rem; }
+    main h1.large-header span.secondary-color {
+      color: #FF5A09; }
+  main h2.small-header {
+    margin: 0;
+    font-weight: 400;
+    font-size: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(65, 65, 65, 0.5); }
+  main .icons {
+    margin-top: 1rem; }
+    main .icons a {
+      padding: 0.4rem; }
+      main .icons a:hover {
+        color: #FF5A09;
+        transition: all 0.5s ease-out; }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main h1.large-header {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  header div.menu-btn i.material-icons {
+    font-size: 36px; }
+  header nav.menu ul.menu-nav,
+  header nav.menu div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    header nav.menu ul.menu-nav.show,
+    header nav.menu div.menu-branding.show {
+      transform: translate(0, 0); }
+  header nav.menu ul.menu-nav {
+    height: 75vh;
+    transform: translate(-100%, 0);
+    font-size: 24px; }
+  header nav.menu div.menu-branding {
+    height: 25vh;
+    transform: translate(100%, 0); }
+    header nav.menu div.menu-branding .portrait {
+      width: 150px;
+      height: 150px; } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; }
+  header div.menu-btn i.material-icons {
+    font-size: 24px; } }

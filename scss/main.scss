@@ -1,19 +1,8 @@
 @import 'utils';
+@import 'body';
+@import 'header';
+@import 'main-content';
+@import 'mobile';
 
-body {
-    @include backgroundImage;
-    color: $white-text;
-    height: 100%;
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5;
 
-    @import 'header';
-    @import 'main-content';
-}
-
-a{
-    color: $white-text;
-    text-decoration: none;
-}
 

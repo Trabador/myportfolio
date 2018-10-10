@@ -1,0 +1,15 @@
+body {
+    @include backgroundImage;
+    color: $white-text;
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+
+    
+}
+
+a{
+    color: $white-text;
+    text-decoration: none;
+}
