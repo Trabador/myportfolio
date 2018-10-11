@@ -1,13 +1,13 @@
 main{
     padding: 4rem;
     height: 100%;
-    &.home{
+    &#home{
         overflow: hidden;
     }
     h1.large-header{
         margin: 0;
         font-weight: 400;
-        margin-top: 20vh;
+        margin-top: 10vh;
         font-size: 4rem;
         span.secondary-color{
             color: $secondary-color;

@@ -1,5 +1,6 @@
 body {
     @include backgroundImage;
+    background: $primary-color;
     color: $white-text;
     height: 100%;
     margin: 0;
