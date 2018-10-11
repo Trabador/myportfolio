@@ -16,24 +16,23 @@ $opacity: 0.7;
     transition: all 0.5s ease-out;
 }
 
-@mixin backgroundImage {
+@mixin backgroundImage() {
     @if $show-background-image{
         &#bg-image{
             background: $background-url;
             background-attachment: fixed;
             background-size: cover;
         }
-
-        &:after{
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background: rgba($primary-color, $opacity);
-        }
+    }
+    &:after{
+        content: '';
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: rgba($primary-color, $opacity);
     }
 }
 
