@@ -26,6 +26,9 @@ a {
   color: #fff;
   text-decoration: none; }
 
+.secondary-color {
+  color: #FF5A09; }
+
 header {
   position: fixed;
   width: 100%;
@@ -189,6 +192,25 @@ main div.projects {
       background: #FF5A09;
       transition: all 0.5s ease-out; }
 
+main .contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  main .contact-info div {
+    font-size: 1.5rem;
+    border: solid 3px #fff;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    transition: all 0.5s ease-out; }
+    main .contact-info div:hover {
+      padding: 2rem;
+      background: #FF5A09;
+      color: black; }
+      main .contact-info div:hover span {
+        color: black; }
+
 @media screen and (min-width: 1171px) {
   main div.projects {
     grid-template-columns: repeat(4, 1fr); } }
@@ -233,6 +255,8 @@ main div.projects {
 @media screen and (max-width: 500px) {
   main h1.large-header {
     margin-top: 5vh; }
+  main h2.small-header {
+    font-size: 1.5rem; }
   main div.projects {
     grid-template-columns: 1fr; }
   header div.menu-btn i.material-icons {
