@@ -28,11 +28,27 @@ main{
             }
 
             a.btn-dark{
-                display: inline block;
+                border-radius: 5px;
+                display: block;
                 padding: 0.5rem 1rem;
                 border: 0;
-                background: darken($primary-color, 30);
+                background: darken($primary-color, 50);
                 color: $white-text;
+    
+                &:hover{
+                    background: $secondary-color;
+                    @include easeOut();
+                }
+            }
+
+            a.btn-light{
+                border-radius: 5px;
+                margin-bottom: 0.5rem;
+                display: block;
+                padding: 0.5rem 1rem;
+                border: 0;
+                background: lighten($primary-color, 50);
+                color: $black-text;
     
                 &:hover{
                     background: $secondary-color;

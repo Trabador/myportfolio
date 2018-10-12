@@ -85,7 +85,7 @@
         }
 
         div.projects{
-            grid-template-columns: 1fr;
+            grid-template-columns: minmax(100px,1fr);
         }
     }
 

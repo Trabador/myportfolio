@@ -108,7 +108,8 @@ header {
       header nav.menu .menu-branding .portrait {
         width: 250px;
         height: 250px;
-        background: url(../img/portrait.jpg);
+        background: url(../img/Untitled.jpg);
+        background-size: cover;
         border-radius: 50%;
         border: solid 3px #FF5A09; }
 
@@ -149,6 +150,8 @@ main .about-info {
     margin: auto;
     border-radius: 50%;
     border: solid 3px #FF5A09;
+    background-image: url(../img/Untitled.jpg);
+    background-size: cover;
     width: 170px;
     height: 170px; }
   main .about-info .bio {
@@ -183,12 +186,24 @@ main div.projects {
     margin: 0;
     margin-bottom: 1rem; }
   main div.projects div.item a.btn-dark {
-    display: inline block;
+    border-radius: 5px;
+    display: block;
     padding: 0.5rem 1rem;
     border: 0;
     background: black;
     color: #fff; }
     main div.projects div.item a.btn-dark:hover {
+      background: #FF5A09;
+      transition: all 0.5s ease-out; }
+  main div.projects div.item a.btn-light {
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    background: #acacac;
+    color: #000; }
+    main div.projects div.item a.btn-light:hover {
       background: #FF5A09;
       transition: all 0.5s ease-out; }
 
@@ -258,6 +273,6 @@ main .contact-info {
   main h2.small-header {
     font-size: 1.5rem; }
   main div.projects {
-    grid-template-columns: 1fr; }
+    grid-template-columns: minmax(100px, 1fr); }
   header div.menu-btn i.material-icons {
     font-size: 24px; } }
