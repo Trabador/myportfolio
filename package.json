@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Portfolio web page for demo purposes.",
   "main": "index.js",
-  "homepage": "https://Trabador.github.io/myportfolio",
+  "homepage": "https://trabador.github.io/myportfolio/",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css --recursive",
     "deploy": "gh-pages -d dist" 
