@@ -241,6 +241,12 @@ main .contact-info {
     main h1.large-header {
       line-height: 1;
       margin-bottom: 1rem; }
+    main div.about-info div.bio p {
+      text-align: justify;
+      font-size: 1rem; }
+    main div.about-info div.bio div.recent-jobs {
+      text-align: justify;
+      font-size: 1rem; }
     main div.about-info {
       grid-template-areas: 'bio-img'  'bio'   'job1'  'job2'  'job3';
       grid-template-columns: 1fr; }
@@ -257,11 +263,14 @@ main .contact-info {
     header nav.menu div.menu-branding.show {
       transform: translate(0, 0); }
   header nav.menu ul.menu-nav {
-    height: 75vh;
+    padding-bottom: 3rem;
+    height: 55vh;
     transform: translate(100%, 0);
-    font-size: 24px; }
+    font-size: 24px;
+    line-height: 1rem; }
   header nav.menu div.menu-branding {
-    height: 25vh;
+    padding-top: 2.5rem;
+    height: 45vh;
     transform: translate(-100%, 0); }
     header nav.menu div.menu-branding .portrait {
       width: 150px;
