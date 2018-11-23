@@ -66,6 +66,11 @@
             &.show{
                 transform: translate(0,0);
             }
+
+            div.portrait{
+                background-size: 180px 150px;
+                background-position: -7px;
+            }
         }
 
         nav.menu ul.menu-nav{
