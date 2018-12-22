@@ -38,13 +38,25 @@ $opacity: 0.7;
 }
 
 @mixin mediaSmall{
-    @media screen and (max-width: 500px){
+    @media screen and (max-width: 500px) and (orientation: portrait){
+        @content;
+    }
+}
+
+@mixin mediaSmallLandScape{
+    @media screen and (max-width: 500px) and (orientation: landscape){
         @content;
     }
 }
 
 @mixin mediaMedium{
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 768px) and (orientation: portrait){
+        @content;
+    }
+}
+
+@mixin mediaMediumLandScape{
+    @media screen and (max-width: 768px) and (orientation: landscape){
         @content;
     }
 }

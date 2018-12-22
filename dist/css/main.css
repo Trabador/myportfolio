@@ -239,7 +239,7 @@ main .contact-info {
   main div.projects {
     grid-template-columns: repeat(3, 1fr); } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (orientation: portrait) {
   main {
     align-items: center;
     text-align: center; }
@@ -285,7 +285,54 @@ main .contact-info {
       width: 150px;
       height: 150px; } }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main h1.large-header {
+      line-height: 1;
+      margin-bottom: 1rem; }
+    main div.about-info div.bio p {
+      text-align: justify;
+      font-size: 1rem; }
+    main div.about-info div.bio div.recent-jobs {
+      text-align: justify;
+      font-size: 1rem; }
+    main div.about-info {
+      grid-template-areas: 'bio-img'  'bio'   'job1'  'job2'  'job3';
+      grid-template-columns: 1fr; }
+    main div.projects {
+      grid-template-columns: repeat(2, 1fr); }
+  header div.menu-btn i.material-icons {
+    font-size: 36px; }
+  header nav.menu ul.menu-nav,
+  header nav.menu div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    header nav.menu ul.menu-nav.show,
+    header nav.menu div.menu-branding.show {
+      transform: translate(0, 0); }
+    header nav.menu ul.menu-nav div.portrait,
+    header nav.menu div.menu-branding div.portrait {
+      background-size: 180px 150px;
+      background-position: -7px; }
+  header nav.menu ul.menu-nav {
+    padding-bottom: 3rem;
+    height: 55vh;
+    transform: translate(100%, 0);
+    font-size: 24px;
+    line-height: 1rem; }
+  header nav.menu div.menu-branding {
+    padding-top: 2.5rem;
+    height: 45vh;
+    transform: translate(-100%, 0); }
+    header nav.menu div.menu-branding div.portrait {
+      width: 100px;
+      height: 100px;
+      background-position: -32px; } }
+
+@media screen and (max-width: 500px) and (orientation: portrait) {
   main h1.large-header {
     margin-top: 5vh; }
   main h2.small-header {
@@ -294,3 +341,17 @@ main .contact-info {
     grid-template-columns: minmax(100px, 1fr); }
   header div.menu-btn i.material-icons {
     font-size: 24px; } }
+
+@media screen and (max-width: 500px) and (orientation: landscape) {
+  main h1.large-header {
+    margin-top: 5vh; }
+  main h2.small-header {
+    font-size: 1.5rem; }
+  main div.projects {
+    grid-template-columns: minmax(100px, 1fr); }
+  header div.menu-btn i.material-icons {
+    font-size: 24px; }
+  header nav.menu div.menu-branding div.portrait {
+    width: 100px;
+    height: 100px;
+    background-position: -32px; } }
