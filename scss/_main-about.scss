@@ -1,4 +1,10 @@
-main{
+main#about{
+    padding: 3rem;
+
+    h1.large-header{
+        margin-top: 1rem;
+    }
+
     .about-info{
         margin-top: 2rem;
         display: grid;

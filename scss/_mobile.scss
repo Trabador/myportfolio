@@ -15,7 +15,7 @@
 }
 
 @include mediaMedium{
-    main{
+    main#home,main#about,main#work,main#contact{
         align-items: center;
         text-align: center;
 
@@ -49,10 +49,9 @@
         div.projects{
             grid-template-columns: repeat(2, 1fr);
         }
-    } 
+    }
 
-    header{
-
+    header.mobile{
         div.menu-btn i.material-icons{
             font-size: 36px;
         }
@@ -95,7 +94,7 @@
 }
 
 @include mediaMediumLandScape{
-    main{
+    main#home,main#about,main#work,main#contact{
         align-items: center;
         text-align: center;
 
@@ -131,8 +130,7 @@
         }
     } 
 
-    header{
-
+    header.mobile{
         div.menu-btn i.material-icons{
             font-size: 36px;
         }
@@ -176,7 +174,7 @@
 }
 
 @include mediaSmall{
-    main{
+    main#home,main#about,main#work,main#contact{
         h1.large-header{
             margin-top: 5vh;
         }
@@ -190,7 +188,7 @@
         }
     }
 
-    header{
+    header.mobile{
         div.menu-btn i.material-icons{
             font-size: 24px;
         }
@@ -198,7 +196,7 @@
 }
 
 @include mediaSmallLandScape{
-    main{
+    main#home,main#about,main#work,main#contact{
         h1.large-header{
             margin-top: 5vh;
         }
@@ -212,7 +210,7 @@
         }
     }
 
-    header{
+    header.mobile{
         div.menu-btn i.material-icons{
             font-size: 24px;
         }

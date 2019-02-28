@@ -32,3 +32,21 @@ function toggleMenu(){
         showMenu = false;
     }
 }
+
+
+  
+const mediaQueryList = window.matchMedia("(min-width: 1025px)");
+const header = document.getElementById("header");
+setDesktopMenuBar(mediaQueryList) // Call listener function at run time
+mediaQueryList.addListener(setDesktopMenuBar) // Attach listener function on state changes
+
+function setDesktopMenuBar(mql) {
+    console.log('test');
+  if (mql.matches) { // If media query matches
+    header.classList.add('desktop');
+    header.classList.remove('mobile');
+  } else {
+    header.classList.remove('desktop');
+    header.classList.add('mobile');
+  }
+}
