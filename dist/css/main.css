@@ -237,7 +237,8 @@ main#work {
       margin: 0; }
     main#work div.projects div.item p {
       margin: 0;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      text-align: justify; }
     main#work div.projects div.item a.btn-dark {
       border-radius: 5px;
       display: block;
