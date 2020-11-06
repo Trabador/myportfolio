@@ -12,7 +12,8 @@ body {
   body#bg-image {
     background: url(../img/background.jpg);
     background-attachment: fixed;
-    background-size: cover; }
+    background-size: cover;
+    background-position: 50%; }
   body:after {
     content: '';
     position: fixed;
