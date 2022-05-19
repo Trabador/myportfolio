@@ -1,188 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/png" href="./img/favicon.png"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
     <title>My Work</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="header">
-        <div class="menu-btn">
-            <i class="material-icons">
-                menu
-            </i>
+      <div class="menu-btn">
+        <i class="material-icons"> menu </i>
+      </div>
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
         </div>
-        <nav class="menu">
-            <div class="menu-branding">
-                <div class="portrait"></div>
-            </div>
-            <ul class="menu-nav">
-                <li class="nav-item">
-                    <a href="./index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./about.html" class="nav-link">About Me</a>
-                </li>
-                <li class="nav-item current-page">
-                    <a href="./work.html" class="nav-link">My Work</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./contact.html" class="nav-link">Contact Me</a>
-                </li>
-            </ul>
-        </nav>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link">About Me</a>
+          </li>
+          <li class="nav-item current-page">
+            <a href="./work.html" class="nav-link">My Work</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" class="nav-link">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main id="work">
-        <h1 class="large-header">
-            My <span class="secondary-color">Work</span>
-        </h1>
-        <h2 class="small-header">
-            Some of my projects.
-        </h2>
-        <div class="projects">
-            <div class="item">
-                <a href="https://github.com/Trabador/ecommerce-js" target="_blank">
-                    <img src="./img/ecommerce.PNG" alt="notes in React" />
-                </a>
-                <h4 class="project-name">E-commerce in React</h4>
-                <p>
-                    E-commerce demo made with React, Firebase and Sass.
-                </p>
-                <a href="https://e-commerce-coffee.web.app/" target="_blank" class="btn-light">
-                    <i class="fas fa-eye"></i>
-                    View Live
-                </a>
-                <a href="https://github.com/Trabador/ecommerce-js" target="_blank" class="btn-dark">
-                    <i class="fab fa-github"></i>
-                    Github Repo
-                </a>
-            </div>
-            <div class="item">
-                <a href="https://github.com/Trabador/NotesApp" target="_blank">
-                    <img src="./img/notes.jpg" alt="notes in React" />
-                </a>
-                <h4 class="project-name">Notes App React</h4>
-                <p>
-                    Notes application made with React and FireBase.
-                </p>
-                <a href="https://notes-5c383.firebaseapp.com/" target="_blank" class="btn-light">
-                    <i class="fas fa-eye"></i>
-                    View Live
-                </a>
-                <a href="https://github.com/Trabador/NotesApp" target="_blank" class="btn-dark">
-                    <i class="fab fa-github"></i>
-                    Github Repo
-                </a>
-            </div>
-            <div class="item">
-                <a href="https://github.com/Trabador/React-firebase_demo" target="_blank">
-                    <img src="./img/cosmos.jpg" alt="cosmos shared" />
-                </a>
-                <h4 class="project-name">Cosmos</h4>
-                <p>
-                    Image sharer and viewer using React, FireBase and Google Auth.
-                </p>
-                <a href="https://cosmos-shared.firebaseapp.com/" target="_blank" class="btn-light">
-                    <i class="fas fa-eye"></i>
-                    View Live
-                </a>
-                <a href="https://github.com/Trabador/React-firebase_demo" target="_blank" class="btn-dark">
-                    <i class="fab fa-github"></i>
-                    Github Repo
-                </a>
-            </div>
-            <div class="item">
-                <a href="https://github.com/Trabador/APIRest-MEAN" target="_blank">
-                    <img src="./img/meanapp.jpg" alt="MEAN Stack App" />
-                </a>
-                <h4 class="project-name">Store Inventory</h4>
-                <p>
-                    MEAN Stack application with CRUD functionalities for a mock store inventory.
-                </p>
-                <a href="https://api-product-demo.herokuapp.com/" target="_blank" class="btn-light">
-                    <i class="fas fa-eye"></i>
-                    View Live
-                </a>
-                <a href="https://github.com/Trabador/APIRest-MEAN" target="_blank" class="btn-dark">
-                    <i class="fab fa-github"></i>
-                    Github Repo
-                </a>
-            </div>
-            <div class="item">
-                <a href="https://github.com/Trabador/Chat-with-Kotlin-for-Android" target="_blank">
-                    <img src="./img/mock.jpg" alt="mock chat" />
-                </a>
-                <h4 class="project-name">Chat Mock</h4>
-                <p>
-                    This is a messenger-like chat app made with Kotlin and FireBase for Android Platform.
-                </p>
-                <a href="https://github.com/Trabador/Chat-with-Kotlin-for-Android" target="_blank" class="btn-dark">
-                    <i class="fab fa-github"></i>
-                    Github Repo
-                </a>
-            </div>
-            <div class="item">
-                <a href="https://github.com/Trabador/TicTacToeAndroid" target="_blank">
-                    <img src="./img/tictactoe.jpg" alt="tictactoe game android" />
-                </a>
-                <h4 class="project-name">Tic Tac Toe</h4>
-                <p>
-                    Tic Tac Toe game made with Java for Android Platform.
-                </p>
-                <a href="https://github.com/Trabador/TicTacToeAndroid" target="_blank" class="btn-dark">
-                    <i class="fab fa-github"></i>
-                    Github Repo
-                </a>
-            </div>
-            <div class="item">
-                <a href="https://github.com/Trabador/Bot-Messenger" target="_blank">
-                    <img src="./img/bot.jpg" alt="FB Messenger Bot" />
-                </a>
-                <h4 class="project-name">Facebook Msn Bot</h4>
-                <p>
-                    Basic bot for Facebook chat messenger. He can respond to some commands.
-                </p>
-                <a href="https://github.com/Trabador/Bot-Messenger" target="_blank" class="btn-dark">
-                    <i class="fab fa-github"></i>
-                    Github Repo
-                </a>
-            </div>
-            <div class="item">
-                <a href="https://github.com/Trabador/ionic-weather" target="_blank">
-                    <img src="./img/weather.jpg" alt="wheater app ionic" />
-                </a>
-                <h4 class="project-name">Weather App </h4>
-                <p>
-                    Weather application in Ionic . Gives weather data depending on user geolocation, includes imperial and metric
-                    units setting feature.
-                </p>
-                <a href="https://github.com/Trabador/ionic-weather" target="_blank" class="btn-dark">
-                    <i class="fab fa-github"></i>
-                    Github Repo
-                </a>
-            </div>
-            <div class="item">
-                <a href="https://github.com/Trabador/pokedex" target="_blank">
-                    <img src="./img/pokeapp.png" alt="Pokemon app in Flutter" />
-                </a>
-                <h4 class="project-name">Pokemon App </h4>
-                <p>
-                    Application that list the pokemons from an API ,and shows his details taping the pokemon item. Developed in Flutter for android platform.
-                </p>
-                <a href="https://github.com/Trabador/pokedex" target="_blank" class="btn-dark">
-                    <i class="fab fa-github"></i>
-                    Github Repo
-                </a>
-            </div>
+      <h1 class="large-header">My <span class="secondary-color">Work</span></h1>
+      <h2 class="small-header">Some of my projects.</h2>
+      <div class="projects">
+        <div class="item">
+          <a href="https://github.com/Trabador/ecommerce-js" target="_blank">
+            <img src="./img/ecommerce.PNG" alt="ecommerce" />
+          </a>
+          <h4 class="project-name">E-commerce in React</h4>
+          <p>E-commerce demo made with React, Firebase and Sass.</p>
+          <a
+            href="https://e-commerce-coffee.web.app/"
+            target="_blank"
+            class="btn-light"
+          >
+            <i class="fas fa-eye"></i>
+            View Live
+          </a>
+          <a
+            href="https://github.com/Trabador/ecommerce-js"
+            target="_blank"
+            class="btn-dark"
+          >
+            <i class="fab fa-github"></i>
+            Github Repo
+          </a>
         </div>
+        <div class="item">
+          <a href="https://github.com/Trabador/cryptodemo" target="_blank">
+            <img src="./img/crypto.PNG" alt="cryptodemo" />
+          </a>
+          <h4 class="project-name">Crypto Viewer</h4>
+          <p>Crypto currency price viewer made with React.</p>
+          <a
+            href="https://cryptodemo-4ef02.web.app/"
+            target="_blank"
+            class="btn-light"
+          >
+            <i class="fas fa-eye"></i>
+            View Live
+          </a>
+          <a
+            href="https://github.com/Trabador/cryptodemo"
+            target="_blank"
+            class="btn-dark"
+          >
+            <i class="fab fa-github"></i>
+            Github Repo
+          </a>
+        </div>
+        <div class="item">
+          <a href="https://github.com/Trabador/NotesApp" target="_blank">
+            <img src="./img/notes.jpg" alt="notes in React" />
+          </a>
+          <h4 class="project-name">Notes App React</h4>
+          <p>Notes application made with React and FireBase.</p>
+          <a
+            href="https://notes-5c383.firebaseapp.com/"
+            target="_blank"
+            class="btn-light"
+          >
+            <i class="fas fa-eye"></i>
+            View Live
+          </a>
+          <a
+            href="https://github.com/Trabador/NotesApp"
+            target="_blank"
+            class="btn-dark"
+          >
+            <i class="fab fa-github"></i>
+            Github Repo
+          </a>
+        </div>
+        <div class="item">
+          <a href="https://github.com/Trabador/APIRest-MEAN" target="_blank">
+            <img src="./img/meanapp.jpg" alt="MEAN Stack App" />
+          </a>
+          <h4 class="project-name">Store Inventory</h4>
+          <p>
+            MEAN Stack application with CRUD functionalities for a mock store
+            inventory.
+          </p>
+          <a
+            href="https://api-product-demo.herokuapp.com/"
+            target="_blank"
+            class="btn-light"
+          >
+            <i class="fas fa-eye"></i>
+            View Live
+          </a>
+          <a
+            href="https://github.com/Trabador/APIRest-MEAN"
+            target="_blank"
+            class="btn-dark"
+          >
+            <i class="fab fa-github"></i>
+            Github Repo
+          </a>
+        </div>
+        <div class="item">
+          <a
+            href="https://github.com/Trabador/Chat-with-Kotlin-for-Android"
+            target="_blank"
+          >
+            <img src="./img/mock.jpg" alt="mock chat" />
+          </a>
+          <h4 class="project-name">Chat Mock</h4>
+          <p>
+            This is a messenger-like chat app made with Kotlin and FireBase for
+            Android Platform.
+          </p>
+          <a
+            href="https://github.com/Trabador/Chat-with-Kotlin-for-Android"
+            target="_blank"
+            class="btn-dark"
+          >
+            <i class="fab fa-github"></i>
+            Github Repo
+          </a>
+        </div>
+        <div class="item">
+          <a
+            href="https://github.com/Trabador/TicTacToeAndroid"
+            target="_blank"
+          >
+            <img src="./img/tictactoe.jpg" alt="tictactoe game android" />
+          </a>
+          <h4 class="project-name">Tic Tac Toe</h4>
+          <p>Tic Tac Toe game made with Java for Android Platform.</p>
+          <a
+            href="https://github.com/Trabador/TicTacToeAndroid"
+            target="_blank"
+            class="btn-dark"
+          >
+            <i class="fab fa-github"></i>
+            Github Repo
+          </a>
+        </div>
+        <div class="item">
+          <a href="https://github.com/Trabador/pokedex" target="_blank">
+            <img src="./img/pokeapp.png" alt="Pokemon app in Flutter" />
+          </a>
+          <h4 class="project-name">Pokemon App</h4>
+          <p>
+            Application that list the pokemons from an API ,and shows his
+            details taping the pokemon item. Developed in Flutter for android
+            platform.
+          </p>
+          <a
+            href="https://github.com/Trabador/pokedex"
+            target="_blank"
+            class="btn-dark"
+          >
+            <i class="fab fa-github"></i>
+            Github Repo
+          </a>
+        </div>
+        <div class="item">
+          <a href="https://github.com/Trabador/Bot-Messenger" target="_blank">
+            <img src="./img/bot.jpg" alt="FB Messenger Bot" />
+          </a>
+          <h4 class="project-name">Facebook Msn Bot</h4>
+          <p>
+            Basic bot for Facebook chat messenger. He can respond to some
+            commands.
+          </p>
+          <a
+            href="https://github.com/Trabador/Bot-Messenger"
+            target="_blank"
+            class="btn-dark"
+          >
+            <i class="fab fa-github"></i>
+            Github Repo
+          </a>
+        </div>
+        <div class="item">
+          <a href="https://github.com/Trabador/ionic-weather" target="_blank">
+            <img src="./img/weather.jpg" alt="wheater app ionic" />
+          </a>
+          <h4 class="project-name">Weather App</h4>
+          <p>
+            Weather application in Ionic . Gives weather data depending on user
+            geolocation, includes imperial and metric units setting feature.
+          </p>
+          <a
+            href="https://github.com/Trabador/ionic-weather"
+            target="_blank"
+            class="btn-dark"
+          >
+            <i class="fab fa-github"></i>
+            Github Repo
+          </a>
+        </div>
+        <div class="item">
+          <a
+            href="https://github.com/Trabador/React-firebase_demo"
+            target="_blank"
+          >
+            <img src="./img/cosmos.jpg" alt="cosmos shared" />
+          </a>
+          <h4 class="project-name">Cosmos</h4>
+          <p>Image sharer and viewer using React, FireBase and Google Auth.</p>
+          <a
+            href="https://cosmos-shared.firebaseapp.com/"
+            target="_blank"
+            class="btn-light"
+          >
+            <i class="fas fa-eye"></i>
+            View Live
+          </a>
+          <a
+            href="https://github.com/Trabador/React-firebase_demo"
+            target="_blank"
+            class="btn-dark"
+          >
+            <i class="fab fa-github"></i>
+            Github Repo
+          </a>
+        </div>
+      </div>
     </main>
 
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
